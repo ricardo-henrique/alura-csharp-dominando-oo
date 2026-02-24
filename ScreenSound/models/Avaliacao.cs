@@ -13,6 +13,15 @@ internal class Avaliacao
     {
         int nota = int.Parse(texto);
 
+        if (nota < 0)
+        {
+            nota = 0;
+        }
+        else if (nota > 10)
+        {
+            nota = 10;
+        }
+
         return new Avaliacao(nota);
     }
 }
