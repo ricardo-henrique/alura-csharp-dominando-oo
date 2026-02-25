@@ -5,15 +5,7 @@ internal class Program
 {
     private static void Main(string[] args)
     {
-        Banda ira = new Banda("Ira!");
-        ira.AdicionarNota(new Avaliacao(10));
-        ira.AdicionarNota(new Avaliacao(8));
-        ira.AdicionarNota(new Avaliacao(6));
-        Banda beatles = new("The Beatles");
-
         Dictionary<string, Banda> bandasRegistradas = new();
-        bandasRegistradas.Add(ira.Nome, ira);
-        bandasRegistradas.Add(beatles.Nome, beatles);
 
         Dictionary<int, Menu> opcoes = new();
         opcoes.Add(1, new MenuRegistrarBanda());
